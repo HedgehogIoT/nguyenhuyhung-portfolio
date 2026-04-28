@@ -1,0 +1,104 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero-section">
+    <div class="hero-copy">
+        <p class="hero-intro" data-i18n-en="Nguyen Huy Hung" data-i18n-vi="Nguyen Huy Hung">Nguyen Huy Hung</p>
+        <h1 data-i18n-en="Building modern websites and product experiences with clear structure and strong visual polish." data-i18n-vi="Xay dung website hien dai va san pham so voi cau truc ro rang va chat luong hien thi tot.">Building modern websites and product experiences with clear structure and strong visual polish.</h1>
+        <p class="hero-summary">
+            <span data-i18n-en="I am Nguyen Huy Hung. This portfolio is organized into dedicated pages for my introduction, project work, CV, and contact details so visitors can move through my work more clearly." data-i18n-vi="Toi la Nguyen Huy Hung. Portfolio nay duoc to chuc thanh cac trang rieng cho gioi thieu, du an, CV va thong tin lien he de nguoi xem co the theo doi cong viec cua toi de dang hon.">I am Nguyen Huy Hung. This portfolio is organized into dedicated pages for my introduction, project work, CV, and contact details so visitors can move through my work more clearly.</span>
+        </p>
+        <div class="hero-actions">
+            <a class="button button-primary" asp-area="" asp-page="/Projects" data-i18n-en="View projects" data-i18n-vi="Xem du an">View projects</a>
+            <a class="button button-secondary" asp-area="" asp-page="/Contact" data-i18n-en="Contact me" data-i18n-vi="Lien he voi toi">Contact me</a>
+        </div>
+        <ul class="hero-metrics" aria-label="Quick highlights">
+            <li>
+                <strong data-i18n-en="Landing page" data-i18n-vi="Trang chu">Landing page</strong>
+                <span data-i18n-en="clear first impression" data-i18n-vi="an tuong dau tien ro rang">clear first impression</span>
+            </li>
+            <li>
+                <strong data-i18n-en="Project pages" data-i18n-vi="Trang du an">Project pages</strong>
+                <span data-i18n-en="case studies and outcomes" data-i18n-vi="case study va ket qua">case studies and outcomes</span>
+            </li>
+            <li>
+                <strong data-i18n-en="CV and contact" data-i18n-vi="CV va lien he">CV and contact</strong>
+                <span data-i18n-en="easy next step for clients" data-i18n-vi="buoc tiep theo de dang cho khach hang">easy next step for clients</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hero-panel" aria-label="Portfolio overview">
+        <div class="portrait-card" aria-label="Profile photo">
+            <div class="portrait-frame">
+                <img src="~/images/profile.jpg" alt="Portrait photo" />
+            </div>
+            <div class="portrait-copy">
+                <span data-i18n-en="Profile image" data-i18n-vi="Anh dai dien">Profile image</span>
+                <p data-i18n-html-en="Your landing page now uses the local portrait image from <code>wwwroot/images/profile.jpg</code>." data-i18n-html-vi="Trang chu hien dang su dung anh dai dien local tu <code>wwwroot/images/profile.jpg</code>.">Your landing page now uses the local portrait image from <code>wwwroot/images/profile.jpg</code>.</p>
+            </div>
+        </div>
+
+        <div class="panel-window">
+            <div class="window-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="panel-content">
+                <div class="panel-label-row">
+                    <span data-i18n-en="Site map" data-i18n-vi="So do trang">Site map</span>
+                    <span data-i18n-en="5 core pages" data-i18n-vi="5 trang chinh">5 core pages</span>
+                </div>
+                <h2 data-i18n-en="A portfolio structure that gives each part of your story its own space." data-i18n-vi="Cau truc portfolio giup moi phan trong hanh trinh cua ban co khong gian rieng.">A portfolio structure that gives each part of your story its own space.</h2>
+                <div class="panel-grid">
+                    <article>
+                        <span data-i18n-en="Home" data-i18n-vi="Trang chu">Home</span>
+                        <strong data-i18n-en="Strong overview" data-i18n-vi="Tong quan ro rang">Strong overview</strong>
+                        <p data-i18n-en="Lead with your positioning, core offer, and a fast path into the work." data-i18n-vi="Bat dau bang dinh vi cua ban, gia tri cot loi va cach nhanh nhat de di vao phan du an.">Lead with your positioning, core offer, and a fast path into the work.</p>
+                    </article>
+                    <article>
+                        <span data-i18n-en="About" data-i18n-vi="Gioi thieu">About</span>
+                        <strong data-i18n-en="Professional story" data-i18n-vi="Cau chuyen nghe nghiep">Professional story</strong>
+                        <p data-i18n-en="Explain your background, approach, and the kind of work you want to attract." data-i18n-vi="Giai thich nen tang, cach ban lam viec va loai cong viec ban muon thu hut.">Explain your background, approach, and the kind of work you want to attract.</p>
+                    </article>
+                    <article>
+                        <span data-i18n-en="Projects" data-i18n-vi="Du an">Projects</span>
+                        <strong data-i18n-en="Proof of ability" data-i18n-vi="Bang chung nang luc">Proof of ability</strong>
+                        <p data-i18n-en="Show outcomes, responsibilities, tools, and the quality of execution." data-i18n-vi="The hien ket qua, vai tro, cong cu va chat luong trien khai.">Show outcomes, responsibilities, tools, and the quality of execution.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-shell">
+    <div class="section-heading">
+        <p data-i18n-en="Portfolio pages" data-i18n-vi="Cac trang portfolio">Portfolio pages</p>
+        <h2 data-i18n-en="Each page serves a specific job in helping visitors understand your work." data-i18n-vi="Moi trang deu co mot vai tro cu the de giup nguoi xem hieu ro hon ve cong viec cua ban.">Each page serves a specific job in helping visitors understand your work.</h2>
+    </div>
+
+    <div class="project-list">
+        <article class="project-card">
+            <div class="project-tag" data-i18n-en="About Me" data-i18n-vi="Gioi thieu">About Me</div>
+            <h3 data-i18n-en="Your background" data-i18n-vi="Nen tang cua ban">Your background</h3>
+            <p data-i18n-en="Introduce your skills, mindset, and the path that led you into web development and product work." data-i18n-vi="Gioi thieu ky nang, tu duy va hanh trinh dua ban den voi phat trien web va cong viec san pham.">Introduce your skills, mindset, and the path that led you into web development and product work.</p>
+        </article>
+
+        <article class="project-card">
+            <div class="project-tag" data-i18n-en="Projects" data-i18n-vi="Du an">Projects</div>
+            <h3 data-i18n-en="Your best work" data-i18n-vi="Du an tieu bieu">Your best work</h3>
+            <p data-i18n-en="Present selected builds with practical detail so clients and employers can judge the quality quickly." data-i18n-vi="Trinh bay cac du an chon loc voi chi tiet thuc te de khach hang va nha tuyen dung nhanh chong danh gia chat luong.">Present selected builds with practical detail so clients and employers can judge the quality quickly.</p>
+        </article>
+
+        <article class="project-card">
+            <div class="project-tag" data-i18n-en="CV" data-i18n-vi="CV">CV</div>
+            <h3 data-i18n-en="Your experience" data-i18n-vi="Kinh nghiem cua ban">Your experience</h3>
+            <p data-i18n-en="Summarize your stack, experience timeline, education, and professional strengths in one place." data-i18n-vi="Tong hop cong nghe, moc kinh nghiem, hoc van va diem manh nghe nghiep cua ban trong mot noi.">Summarize your stack, experience timeline, education, and professional strengths in one place.</p>
+        </article>
+    </div>
+</section>

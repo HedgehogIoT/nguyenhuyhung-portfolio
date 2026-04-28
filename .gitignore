@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+temp-build/
+tmp-run.log
+tmp-run.err
+*.user
+*.suo

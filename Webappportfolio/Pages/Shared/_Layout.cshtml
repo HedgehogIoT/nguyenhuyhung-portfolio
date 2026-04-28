@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Nguyen Huy Hung</title>
+    <script type="importmap"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Syne:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Webappportfolio.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="page-shell">
+        <header class="site-header">
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="site-mark" asp-area="" asp-page="/Index">Nguyen Huy Hung</a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links">
+                    <span data-i18n-en="Menu" data-i18n-vi="Menu">Menu</span>
+                </button>
+                <div class="site-links" id="site-links">
+                    <a asp-area="" asp-page="/Index" data-i18n-en="Home" data-i18n-vi="Trang chu">Home</a>
+                    <a asp-area="" asp-page="/About" data-i18n-en="About Me" data-i18n-vi="Gioi thieu">About Me</a>
+                    <a asp-area="" asp-page="/Projects" data-i18n-en="Projects" data-i18n-vi="Du an">Projects</a>
+                    <a asp-area="" asp-page="/Cv" data-i18n-en="CV" data-i18n-vi="Ho so">CV</a>
+                    <a asp-area="" asp-page="/Contact" data-i18n-en="Contact" data-i18n-vi="Lien he">Contact</a>
+                </div>
+                <div class="lang-switcher" aria-label="Language switcher">
+                    <button class="lang-button is-active" type="button" data-lang="en">EN</button>
+                    <button class="lang-button" type="button" data-lang="vi">VI</button>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main" role="main">
+            @RenderBody()
+        </main>
+
+        <footer class="site-footer">
+            <p data-i18n-en="Nguyen Huy Hung portfolio." data-i18n-vi="Portfolio cua Nguyen Huy Hung.">Nguyen Huy Hung portfolio.</p>
+            <a asp-area="" asp-page="/Contact" data-i18n-en="Get in touch" data-i18n-vi="Lien he">Get in touch</a>
+        </footer>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

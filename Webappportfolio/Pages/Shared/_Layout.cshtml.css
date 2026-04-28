@@ -1,0 +1,8 @@
+.site-mark {
+  position: relative;
+}
+
+.site-mark::after {
+  content: ".";
+  color: var(--accent);
+}
